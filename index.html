@@ -9,32 +9,36 @@
     <meta name="description" content="WDD 231 Web Frontend Development I course home page.">
     <meta name="author" content="Adindu Chinweokwu Clementina">
 
+    <!-- FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- CSS SECTION -->
-     <link rel="stylesheet" href="/styles/normalize.css">
+     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <!-- JAVASCRIPT SECTION-->
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
 </head>
 <body>
     <!--HEADER SECTION-->
     <header>
         <img src="/images/software-development.svg" alt="software-development logo" width="512" height="512">
         <span>Chinweokwu Clementina Adindu</span>
-        <button id="hm-btn" class="hamburger"></button>
+        <button id="hm-btn" class="hamburger" aria-label="Open navigation menu"></button>
     </header>
 
     <!--NAVIGATION SECTION-->
     <nav class="navigation">
         <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">CHAMBER</a></li>
-            <li><a href="">FINAL</a></li>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">Final</a></li>
         </ul>
-        
     </nav>
 
     <!-- MAIN SECTION-->
@@ -42,26 +46,62 @@
         <h1>Home</h1>
 
         <!-- ABOUT ME SECTION-->
-        <section>
-            <h2>About me</h2>
-            <p></p>
+        <section class="abt-me">
+        
+        <h2>About me</h2>
+        <p> 
+            My name is Adindu Chinweokwu Clementina, and I am from Nigeria. I am a Software Development student at BYU-Idaho with an
+            interest in programming. I enjoy learning how to build websites, web applications, and desktop applications.
+        </p>
+
+        <p>
+            I am working toward becoming a proficient full-stack developer while improving my programming skills step by step. I
+            also have a background in Food Science and Technology and enjoy creative activities such as nail technology. I am
+            excited to continue developing my skills through WDD 231 and applying what I learn to real-world projects.
+        </p>
         </section>
 
         <!-- STUDENT PHOTO-->
-        <section>
+        <section class="student-photo">
             <h2>Student Photo</h2>
-            <img src="" alt="">
+            <img src="images/profile.webp" alt="Photo of Adindu Chinweokwu Clementina">
         </section>
 
         <!-- WEB CERTIFICATE COURSES-->
-        <section>
+        <section class="web-cert">
             <h2>Web Certificate Course</h2>
+            <div class="web-cert1">
+                <button type="button">All</button>
+                <button type="button">CSE</button>
+                <button type="button">WDD</button>
+            </div>
+            
+            <div class="web-cert2" id="web-cert2">
+                <!-- JavaScript will display the courses here -->
+            </div>
+
         </section>
     </main>
 
     <!-- FOOTER SECTION-->
      <footer>
-
+        <div class="social-links">
+            <a href="" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/instagram.svg" alt="instagram" width="16" height="16"></a>
+        </div>
+        <p>
+            &copy;<span id="currentyear"></span>
+            • Adindu Chinweokwu Clementina
+            • Nigeria
+        </p>
+        
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+        
      </footer>
     
 </body>

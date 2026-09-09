@@ -45,7 +45,6 @@ header span {
 }
 
 
-
 .hamburger.show::before {
     content: "\00D7";
 }
@@ -60,6 +59,28 @@ header span {
     display: block;
 }
 
- .navigation ul {
-     display: flex;
+.navigation ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ }
+
+ .navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #3D405B;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+ }
+
+ .navigation li.current {
+    background-color: #eee;
+ }
+
+ .navigation a:hover{
+    background-color: #E07856;
+ }
+
+ h1 {
+    margin-left: 10px;
  }
