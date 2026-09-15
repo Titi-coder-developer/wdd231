@@ -115,7 +115,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background-color: var(--primary-orange);
+    background-color: var(--navy-blue);
     color: white;
 }
 
