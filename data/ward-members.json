@@ -1,0 +1,33 @@
+{
+    "familyName": "Adindu",
+    "moveInDate": "2014-08-15",
+    "numberOfPeople": 5,
+    "visitedByBishopric": true,
+    "family_members": [
+        {
+            "name": "Rejoice Adindu",
+            "gender": "Female",
+            "birthdate": "1993-02-16"
+        },
+        {
+            "name": "Chinweokwu Adindu",
+            "gender": "Female",
+            "birthdate": "1994-05-02"
+        },
+        {
+            "name": "Arinze Adindu",
+            "gender": "Male",
+            "birthdate": "1995-09-06"
+        },
+        {
+            "name": "Wisdom Adindu",
+            "gender": "Male",
+            "birthdate": "1998-05-02"
+        },
+        {
+            "name": "Miracle Adindu",
+            "gender": "Female",
+            "birthdate": "2001-06-09"
+        }
+    ]
+}

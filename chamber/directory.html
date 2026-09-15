@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Onitsha Chamber of Commerce | Directory</title>
+    <meta name="description"
+        content="Explore businesses and organizations in the Onitsha Chamber of Commerce directory.">
+    <meta name="author" content="Chinweokwu Clementina Adindu">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Onitsha Chamber of Commerce | Directory">
+    <meta property="og:description"
+        content="Explore businesses and organizations in the Onitsha Chamber of Commerce directory.">
+    <meta property="og:image" content="images/onitsha-chamber-commerce.webp">
+    <meta property="og:url" content="https://titi-coder-developer.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-occ.ico">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/larger.css">
+
+    <!-- JavaScript -->
+    <script src="js/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="site-branding">
+            <img src="images/home.svg" alt="Onitsha Chamber of Commerce logo" width="512" height="512">
+            <span>Onitsha Chamber of Commerce</span>
+        </div>
+    
+        <button id="menu-button" class="hamburger" aria-label="Open navigation menu"></button>
+    
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>    
+        </nav>
+    </header>
+
+        <!--MAIN SECTION-->
+    <main>
+        <h1>Onitsha Business Directory</h1>
+        <div class="view-buttons">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+            
+        <section id="members" class="grid">
+                <!-- Members will be added here by JavaScript -->
+                
+        </section>
+
+    </main>
+
+        <!-- FOOTER SECTION -->
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/adindu-clementine" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+            </a>
+        
+            <a href="#" target="_blank">
+                <img src="images/twitter-x.svg" alt="Twitter X" width="16" height="16">
+            </a>
+        
+            <a href="https://github.com/Titi-coder-developer" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="16" height="16">
+            </a>
+        
+            <a href="#" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram" width="16" height="16">
+            </a>
+        </div>
+        
+            <p>
+                &copy;<span id="currentyear"></span>
+                • Onitsha Chamber of Commerce
+                • Onitsha, Anambra State, Nigeria
+            </p>
+        
+            <p>
+                Chinweokwu Clementina Adindu
+                • WDD 231 Web Frontend Development I
+            </p>
+        
+            <p>
+                Last Modification:
+                <span id="lastModified"></span>
+            </p>
+        
+    </footer>
+</body>
+</html>

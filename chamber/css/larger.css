@@ -1,0 +1,171 @@
+/* ------------------------------
+   LARGER SCREEN STYLES
+--------------------------------- */
+
+@media screen and (min-width: 640px) {
+
+    /* ------------------------------
+       HEADER
+    --------------------------------- */
+
+    header {
+        grid-template-columns: auto 1fr;
+        padding: 1rem 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+
+    /* ------------------------------
+       NAVIGATION
+    --------------------------------- */
+
+    .nav-bar {
+        display: block;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    nav a {
+        padding: 0.6rem 1rem;
+        border-radius: 5px;
+    }
+
+
+    /* ------------------------------
+       SITE BRANDING
+    --------------------------------- */
+
+    .site-branding span {
+        font-size: 1.2rem;
+    }
+
+
+    /* ------------------------------
+       MAIN
+    --------------------------------- */
+
+    main {
+        padding: 2rem;
+    }
+
+    main h1 {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+
+
+    /* ------------------------------
+       MEMBER GRID
+    --------------------------------- */
+
+    #members.grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+
+    /* ------------------------------
+       MEMBER CARD
+    --------------------------------- */
+
+    .member-card {
+        padding: 1.5rem;
+        border-radius: 8px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .member-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+
+    /* ------------------------------
+       VIEW BUTTONS
+    --------------------------------- */
+
+    .view-buttons {
+        margin-bottom: 2rem;
+    }
+
+    .view-buttons button {
+        min-width: 90px;
+    }
+
+
+    /* ------------------------------
+       FOOTER
+    --------------------------------- */
+
+    footer {
+        margin-top: 3rem;
+        padding: 2rem;
+        text-align: center;
+        background-color: var(--navy-blue);
+        color: white;
+    }
+
+    footer p {
+        margin: 0.5rem 0;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .social-links img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+
+/* ------------------------------
+   LARGE DESKTOP
+--------------------------------- */
+
+@media screen and (min-width: 900px) {
+
+    main {
+        padding: 2.5rem;
+    }
+
+
+    /* ------------------------------
+       MEMBER GRID
+    --------------------------------- */
+
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+
+    /* ------------------------------
+       LIST VIEW
+    --------------------------------- */
+
+    #members.list .member-card {
+        grid-template-columns: 120px 1fr;
+        padding: 1.5rem 2rem;
+    }
+
+    #members.list .member-card img {
+        width: 120px;
+        height: 90px;
+    }
+}
