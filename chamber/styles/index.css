@@ -142,12 +142,12 @@
     font-weight: 600;
 }
 
-.btn-primary {
+.join-button {
     background-color: var(--navy-blue);
     color: var(--off-white);
 }
 
-.btn-primary:hover {
+.join-button:hover {
     background-color: var(--primary-orange);
 }
 
