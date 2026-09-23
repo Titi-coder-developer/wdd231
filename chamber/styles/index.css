@@ -80,6 +80,9 @@
 
     letter-spacing: 2px;
     text-transform: uppercase;
+
+    align-self: flex-start;
+    
 }
 
 
@@ -87,7 +90,7 @@
    HERO HEADING
 ========================== */
 
-.hero-content h2 {
+.hero-content h1 {
     margin: 0 0 1rem;
 
     color: var(--off-white);
@@ -95,6 +98,7 @@
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 1.2;
+    text-align: left;
 }
 
 
@@ -139,12 +143,12 @@
 }
 
 .btn-primary {
-    background-color: var(--primary-orange);
+    background-color: var(--navy-blue);
     color: var(--off-white);
 }
 
 .btn-primary:hover {
-    background-color: var(--navy-blue);
+    background-color: var(--primary-orange);
 }
 
 
