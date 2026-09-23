@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Onitsha Chamber of Commerce | Home</title>
+    <meta name="description"
+        content="Discover businesses, events, opportunities, and community resources through the Onitsha Chamber of Commerce.">
+    <meta name="author" content="Chinweokwu Clementina Adindu">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Onitsha Chamber of Commerce | home">
+
+    <meta property="og:description"
+        content="Discover businesses, events, opportunities, and community resources through the Onitsha Chamber of Commerce.">
+
+    <meta property="og:image"
+        content="https://titi-coder-developer.github.io/wdd231/chamber/images/onitsha-chamber-commerce.webp">
+
+    <meta property="og:url" content="https://titi-coder-developer.github.io/wdd231/chamber/index.html">
+
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-occ.ico">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/index-larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <!-- Header Section-->
+    <header>
+        <div class="site-branding">
+            <img src="images/home.svg" alt="Onitsha Chamber of Commerce logo" width="512" height="512">
+            <span>Onitsha Chamber of Commerce</span>
+        </div>
+    
+        <button id="menu-button" class="hamburger" aria-label="Open navigation menu"></button>
+    
+        <nav class="nav-bar">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+     <main>
+        <!-- Hero section-->
+        <section class="hero">    
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/pexels-artbovich.webp">
+                <source media="(max-width: 767px)" srcset="images/pexels-artbovich.webp">
+                <img src="images/pexels-artbovich.webp" alt="Onitsha Chamber of Commerce banner">
+            </picture>
+
+            <div class="hero-content">
+                <p class="hero-tagline">ONITSHA CHAMBER OF COMMERCE</p>
+            
+                <h2>Connecting Businesses.<br>Growing Onitsha.</h2>
+            
+                <p class="hero-text">
+                    Discover local businesses, connect with opportunities,
+                    and be part of a stronger business community.
+                </p>
+
+            <div class="hero-buttons">
+                <a href="join.html" class="btn-primary">Become a Member</a>
+            
+            </div>
+
+            </div>
+            
+         </section>
+        <div class="home-info">
+            <!-- Event section -->
+            <section class="events">
+                <h2>Current Event</h2>
+
+                <article>
+                    <h3>Iwaji Ikolo Awada</h3>
+                    <p><strong>Date:</strong> September 30, 2026</p>
+                    <p><strong>Location:</strong> Onitsha, Anambra State</p>
+                </article>
+
+                <article>
+                    <h3>Iwaji Ikpala Awada</h3>
+                    <p><strong>Date:</strong> October 1, 2026</p>
+                    <p><strong>Location:</strong> Onitsha, Anambra State</p>
+                </article>
+
+                <article>
+                    <h3>Iwaji Ikolo Eke</h3>
+                    <p><strong>Date:</strong> October 2, 2026</p>
+                    <p><strong>Location:</strong> Onitsha, Anambra State</p>
+                </article>
+
+                <article>
+                    <h3>Ogbalido</h3>
+                    <p><strong>Date:</strong> October 10, 2026</p>
+                    <p><strong>Location:</strong> Onitsha, Anambra State</p>
+                </article>
+
+                <article>
+                    <h3>Under 45 CEOs Business & Leadership Summit</h3>
+                    <p><strong>Date:</strong> October 10–11, 2026</p>
+                    <p><strong>Location:</strong> Youth Development Centre, 3-3, Onitsha</p>
+                    <p>
+                        A business and leadership summit focused on entrepreneurship,
+                        mentorship, networking, and business growth.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Ofala Youth Carnival</h3>
+                    <p><strong>Date:</strong> October 14, 2026</p>
+                    <p><strong>Location:</strong> Onitsha, Anambra State</p>
+                </article>
+
+                <article>
+                    <h3>Ofala Festival</h3>
+                    <p><strong>Date:</strong> October 16–17, 2026</p>
+                    <p><strong>Location:</strong> Ezechima Square, Onitsha</p>
+                </article>
+
+                <article>
+                    <h3>Global Wealth Conference 2026</h3>
+                    <p><strong>Date:</strong> October 31, 2026</p>
+                    <p><strong>Location:</strong> Vegas Astoria Hotels, GRA Onitsha</p>
+                    <p>
+                        A conference focused on business growth, leadership,
+                        networking, and entrepreneurship.
+                    </p>
+                </article>
+            </section>
+
+            <!-- Weather Section-->
+            <section class="weather">
+                <h2>Weather</h2>
+
+                <div id="current-weather">
+                    <!-- JavaScript will put current weather here -->
+                </div>
+                
+                <div id="forecast">
+                    <!-- JavaScript will put 3-day forecast here -->
+                </div>
+            </section>
+        </div>
+
+            <section class="spotlights">
+                <h2>Business Spotlights</h2>
+
+                <div id="spotlights">
+                    <!-- JavaScript puts businesses here -->
+                </div>
+
+            </section>
+        
+     </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/adindu-clementine" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+            </a>
+    
+            <a href="#" target="_blank">
+                <img src="images/twitter-x.svg" alt="Twitter X" width="16" height="16">
+            </a>
+    
+            <a href="https://github.com/Titi-coder-developer" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="16" height="16">
+            </a>
+    
+            <a href="#" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram" width="16" height="16">
+            </a>
+        </div>
+    
+        <p>
+            &copy;<span id="currentyear"></span>
+            • Onitsha Chamber of Commerce
+            • Onitsha, Anambra State, Nigeria
+        </p>
+    
+        <p>
+            Chinweokwu Clementina Adindu
+            • WDD 231 Web Frontend Development I
+        </p>
+    
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+    
+    </footer>
+
+
+    
+</body>
+</html>

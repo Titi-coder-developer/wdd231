@@ -1,0 +1,275 @@
+
+/* ==========================
+   HOME PAGE - SMALL SCREEN
+========================== */
+
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero {
+    position: relative;
+    min-height: 70vh;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
+}
+
+.hero picture {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Dark overlay */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+
+/* ==========================
+   HERO CONTENT
+========================== */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    min-height: 70vh;
+    max-width: 600px;
+
+    margin-left: 8%;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-bottom: 4rem;
+
+    color: var(--off-white);
+}
+
+
+/* ==========================
+   HERO TAGLINE
+========================== */
+
+.hero-tagline {
+    margin: 0 0 0.7rem;
+
+    color: var(--off-white);
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* ==========================
+   HERO HEADING
+========================== */
+
+.hero-content h2 {
+    margin: 0 0 1rem;
+
+    color: var(--off-white);
+    font-family: "Merriweather", serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* ==========================
+   HERO DESCRIPTION
+========================== */
+
+.hero-text {
+    max-width: 350px;
+
+    margin: 0 0 1rem;
+
+    color: var(--off-white);
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+
+/* ==========================
+   HERO BUTTON
+========================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    display: inline-block;
+
+    min-width: 120px;
+    padding: 0.65rem 1rem;
+
+    border-radius: 5px;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--primary-orange);
+    color: var(--off-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--navy-blue);
+}
+
+
+/* ==========================
+   CURRENT EVENTS
+========================== */
+
+.events {
+    margin-bottom: 2rem;
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    text-align: center;
+}
+
+.events article {
+    background-color: var(--background-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+}
+
+.events article h3 {
+    margin-top: 0;
+}
+
+.events article p {
+    margin: 0.4rem 0;
+}
+
+
+/* ==========================
+   WEATHER
+========================== */
+
+.weather {
+    background-color: var(--background-color);
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+}
+
+#current-weather {
+    text-align: center;
+}
+
+#current-weather img {
+    width: 100px;
+    height: 100px;
+}
+
+#current-weather p {
+    margin: 0.4rem 0;
+}
+
+
+/* Forecast */
+
+#forecast {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#forecast div {
+    padding: 1rem;
+
+    text-align: center;
+
+    background-color: var(--off-white);
+    border-radius: 8px;
+}
+
+#forecast p {
+    margin: 0.4rem 0;
+}
+
+
+/* ==========================
+   BUSINESS SPOTLIGHTS
+========================== */
+
+.spotlights {
+    margin-bottom: 2rem;
+}
+
+#spotlights {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background-color: var(--background-color);
+
+    padding: 1rem;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+    box-shadow: var(--box-shadow);
+}
+
+.spotlight-card img {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.spotlight-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-card p {
+    margin: 0.4rem 0;
+}
+
+.spotlight-card a {
+    color: var(--navy-blue);
+    font-weight: 600;
+}
+

@@ -4,7 +4,7 @@
         "address": "Onitsha, Anambra State",
         "phone": "08066940796",
         "website": "",
-        "image": "../images/lgo.webp",
+        "image": "images/lgo.webp",
         "membership": 1
     },
 
@@ -13,7 +13,7 @@
         "address": "Omagba phase 1, Onitsha, Anambra State",
         "phone": "09035450713",
         "website": "",
-        "image": "../images/mira-design.webp",
+        "image": "images/mira-design.webp",
         "membership": 2
     },
     
@@ -22,7 +22,7 @@
         "address": "Awka Road, Onitsha, Anambra State",
         "phone": "08023456789",
         "website": "",
-        "image": "../images/business-hub.webp",
+        "image": "images/business-hub.webp",
         "membership": 2
     },
 
@@ -31,7 +31,7 @@
         "address": "Main Market Road, Onitsha, Anambra State",
         "phone": "08034567890",
         "website": "",
-        "image": "../images/camera-reels.svg",
+        "image": "images/camera-reels.svg",
         "membership": 3
     },
 
@@ -40,7 +40,7 @@
         "address": "Ochanja Market, Onitsha, Anambra State",
         "phone": "08045678901",
         "website": "",
-        "image": "../images/fork-knife.svg",
+        "image": "images/fork-knife.svg",
         "membership": 1
     },
 
@@ -58,7 +58,7 @@
         "address": "Nkpor Road, Onitsha, Anambra State",
         "phone": "08067890123",
         "website": "",
-        "image": "../images/camera-reels.svg",
+        "image": "images/camera-reels.svg",
         "membership": 3
     },
 
@@ -67,7 +67,7 @@
         "address": "New Market Road, Onitsha, Anambra State",
         "phone": "08078901234",
         "website": "",
-        "image": "../images/calendar3-event-fill.svg",
+        "image": "images/calendar3-event-fill.svg",
         "membership": 1
     },
 
@@ -76,7 +76,7 @@
         "address": "Main Market, Onitsha, Anambra State",
         "phone": "08089012345",
         "website": "",
-        "image": "../images/shop.svg",
+        "image": "images/shop.svg",
         "membership": 3
     },
 
@@ -85,7 +85,7 @@
         "address": "Old Market Road, Onitsha, Anambra State",
         "phone": "08090123456",
         "website": "",
-        "image": "../images/car-front-fill.svg",
+        "image": "images/car-front-fill.svg",
         "membership": 2
     },
 
@@ -94,7 +94,7 @@
         "address": "Police post, Nkport Market, Onitsha, Anambra State",
         "phone": "09025799756",
         "website": "",
-        "image": "../images/titi-studio.webp",
+        "image": "images/titi-studio.webp",
         "membership": 3
     },
 
@@ -103,7 +103,7 @@
         "address": "Gra, Onitsha, Anambra State",
         "phone": "09014334273",
         "website": "",
-        "image": "../images/wiz.webp",
+        "image": "images/wiz.webp",
         "membership": 3
     }
     
