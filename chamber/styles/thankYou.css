@@ -1,0 +1,107 @@
+/* ==============================
+   THANK YOU PAGE
+============================== */
+
+.join-intro {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: #f8f6f2;
+}
+
+.join-intro h1 {
+    color: #1f3a5f;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.join-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #333333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+/* Application Information */
+
+.join-form-section {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    background-color: #ffffff;
+    border-top: 5px solid #e07856;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.join-form-section h2 {
+    text-align: center;
+    color: #1f3a5f;
+    margin-bottom: 1.5rem;
+}
+
+#application-info {
+    background-color: #f8f6f2;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+#application-info p {
+    margin: 0.8rem 0;
+    color: #333333;
+    line-height: 1.5;
+}
+
+#application-info strong {
+    color: #1f3a5f;
+}
+
+
+/* ==============================
+   THANK YOU BUTTON
+============================== */
+
+.thank-you-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #e07856;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.thank-you-button:hover {
+    background-color: #1f3a5f;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+
+    .join-intro {
+        padding: 2.5rem 1rem;
+    }
+
+    .join-intro h1 {
+        font-size: 2rem;
+    }
+
+    .join-intro p {
+        font-size: 1rem;
+    }
+
+    .join-form-section {
+        margin: 1.5rem 1rem;
+        padding: 1.5rem 1rem;
+    }
+
+    #application-info {
+        padding: 1rem;
+    }
+}

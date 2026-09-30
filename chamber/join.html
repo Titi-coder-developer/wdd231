@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Join the Onitsha Chamber of Commerce and connect with businesses, events, opportunities, and community resources.">
+
+    <meta name="author" content="Chinweokwu Clementina Adindu">
+
+    <meta property="og:title" content="Join | Onitsha Chamber of Commerce">
+    <meta property="og:description"
+        content="Join the Onitsha Chamber of Commerce and connect with businesses and opportunities in Onitsha.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://titi-coder-developer.github.io/wdd231/chamber/images/onitsha-chamber-commerce.webp">
+    <meta property="og:url" content="https://titi-coder-developer.github.io/wdd231/chamber/join.html">
+
+    <title>Join | Onitsha Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon-occ.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="site-branding">
+            <img src="images/home.svg" alt="Onitsha Chamber of Commerce logo" width="512" height="512">
+            <span>Onitsha Chamber of Commerce</span>
+        </div>
+
+        <button id="menu-button" class="hamburger" aria-label="Open navigation menu">
+        </button>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="join-intro">
+            <h1>Join the Onitsha Chamber of Commerce</h1>
+            <p>
+                Become part of the Onitsha business community.
+                Choose a membership level and enjoy opportunities
+                to connect, learn, promote your business, and grow.
+            </p>
+        </section>
+
+
+        <div class="join-container">
+
+            <!-- Membership Application Form -->
+            <section class="join-form-section">
+
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html">
+
+                    <label for="first-name">
+                        First Name
+                        <input type="text" id="first-name" name="firstName" title="Enter your first name"
+                            autocomplete="given-name" required>
+                    </label>
+
+
+                    <label for="last-name">
+                        Last Name
+                        <input type="text" id="last-name" name="lastName" title="Enter your last name"
+                            autocomplete="family-name" required>
+                    </label>
+
+
+                    <label for="organization-title">
+                        Organizational Title
+                        <input type="text" id="organization-title" name="organizationTitle"
+                            title="Enter your organizational title using at least seven letters, spaces, or hyphens."
+                            autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"
+                            placeholder="e.g. General Manager">
+                    </label>
+
+
+                    <label for="email">
+                        Email Address
+                        <input type="email" id="email" name="email" title="Enter your email address"
+                            autocomplete="email" placeholder="example@email.com" required>
+                    </label>
+
+
+                    <label for="phone">
+                        Mobile Phone Number
+                        <input type="tel" id="phone" name="phone" title="Enter your mobile phone number"
+                            autocomplete="tel" required>
+                    </label>
+
+
+                    <label for="organization">
+                        Business / Organization Name
+                        <input type="text" id="organization" name="organization"
+                            title="Enter your business or organization name" autocomplete="organization" required>
+                    </label>
+
+
+                    <fieldset>
+                        <legend>Membership Level</legend>
+
+                        <label>
+                            <input type="radio" name="membership" value="np" required>
+                            NP Membership — No Fee
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="bronze">
+                            Bronze Membership
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="silver">
+                            Silver Membership
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="gold">
+                            Gold Membership
+                        </label>
+                    </fieldset>
+
+
+                    <label for="description">
+                        Business / Organization Description
+                        <textarea id="description" name="description" title="Describe your business or organization"
+                            rows="6"></textarea>
+                    </label>
+
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+
+                    <input type="submit" value="Submit Membership Application" class="submit-button">
+
+                </form>
+
+            </section>
+
+
+            <!-- Membership Level Cards -->
+            <section class="membership-section">
+
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+
+                    <article class="membership-card np-card">
+                        <h3>NP Membership</h3>
+                        <p>For qualifying non-profit organizations.</p>
+                        <a href="#np-modal" class="modal-link" data-modal="np-modal">
+                            Learn More
+                        </a>
+                    </article>
+
+
+                    <article class="membership-card bronze-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic benefits for growing businesses.</p>
+                        <a href="#bronze-modal" class="modal-link" data-modal="bronze-modal">
+                            Learn More
+                        </a>
+                    </article>
+
+
+                    <article class="membership-card silver-card">
+                        <h3>Silver Membership</h3>
+                        <p>More visibility, training, and event benefits.</p>
+                        <a href="#silver-modal" class="modal-link" data-modal="silver-modal">
+                            Learn More
+                        </a>
+                    </article>
+
+
+                    <article class="membership-card gold-card">
+                        <h3>Gold Membership</h3>
+                        <p>Premium benefits and promotional opportunities.</p>
+                        <a href="#gold-modal" class="modal-link" data-modal="gold-modal">
+                            Learn More
+                        </a>
+                    </article>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- NP Modal -->
+        <dialog id="np-modal">
+            <div class="modal-content">
+
+                <button class="close-modal" aria-label="Close NP Membership information">
+                    &times;
+                </button>
+
+                <h2>NP Membership</h2>
+
+                <p><strong>Cost:</strong> No fee</p>
+
+                <ul>
+                    <li>Networking opportunities</li>
+                    <li>Community events</li>
+                    <li>Business education resources</li>
+                    <li>Community visibility</li>
+                </ul>
+
+            </div>
+        </dialog>
+
+
+        <!-- Bronze Modal -->
+        <dialog id="bronze-modal">
+            <div class="modal-content">
+
+                <button class="close-modal" aria-label="Close Bronze Membership information">
+                    &times;
+                </button>
+
+                <h2>Bronze Membership</h2>
+
+                <p><strong>Cost:</strong> ₦50,000 per year</p>
+
+                <ul>
+                    <li>Business directory listing</li>
+                    <li>Networking opportunities</li>
+                    <li>Business networking events</li>
+                    <li>Selected training programs</li>
+                    <li>Community events</li>
+                </ul>
+
+            </div>
+        </dialog>
+
+
+        <!-- Silver Modal -->
+        <dialog id="silver-modal">
+            <div class="modal-content">
+
+                <button class="close-modal" aria-label="Close Silver Membership information">
+                    &times;
+                </button>
+
+                <h2>Silver Membership</h2>
+
+                <p><strong>Cost:</strong> ₦100,000 per year</p>
+
+                <ul>
+                    <li>All Bronze Membership benefits</li>
+                    <li>Priority networking opportunities</li>
+                    <li>Additional training opportunities</li>
+                    <li>Event discounts</li>
+                    <li>Increased business visibility</li>
+                    <li>Advertising opportunities</li>
+                </ul>
+
+            </div>
+        </dialog>
+
+
+        <!-- Gold Modal -->
+        <dialog id="gold-modal">
+            <div class="modal-content">
+
+                <button class="close-modal" aria-label="Close Gold Membership information">
+                    &times;
+                </button>
+
+                <h2>Gold Membership</h2>
+
+                <p><strong>Cost:</strong> ₦150,000 per year</p>
+
+                <ul>
+                    <li>All Silver Membership benefits</li>
+                    <li>Premium networking opportunities</li>
+                    <li>Priority event participation</li>
+                    <li>Special training opportunities</li>
+                    <li>Premium advertising opportunities</li>
+                    <li>Business spotlight opportunities</li>
+                    <li>Greater promotional visibility</li>
+                </ul>
+
+            </div>
+        </dialog>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/adindu-clementine" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+            </a>
+    
+            <a href="#" target="_blank">
+                <img src="images/twitter-x.svg" alt="Twitter X" width="16" height="16">
+            </a>
+    
+            <a href="https://github.com/Titi-coder-developer" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="16" height="16">
+            </a>
+    
+            <a href="#" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram" width="16" height="16">
+            </a>
+        </div>
+    
+        <p>
+            &copy;<span id="currentyear"></span>
+            • Onitsha Chamber of Commerce
+            • Onitsha, Anambra State, Nigeria
+        </p>
+    
+        <p>
+            Chinweokwu Clementina Adindu
+            • WDD 231 Web Frontend Development I
+        </p>
+    
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+    
+    </footer>
+
+
+</body>
+
+</html>

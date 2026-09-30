@@ -1,0 +1,333 @@
+/* =========================================
+JOIN PAGE
+========================================= */
+
+.join-intro {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.join-intro h1 {
+    color: var(--navy-blue, #1F3A5F);
+    margin-bottom: 0.75rem;
+}
+
+.join-intro p {
+    line-height: 1.7;
+}
+
+/* =========================================
+FORM + MEMBERSHIP LAYOUT
+========================================= */
+
+.join-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.join-form-section,
+.membership-section {
+    margin-bottom: 2rem;
+}
+
+.join-form-section h2,
+.membership-section h2 {
+    color: var(--navy-blue, #1F3A5F);
+    margin-bottom: 1rem;
+}
+
+/* =========================================
+FORM
+========================================= */
+
+.join-form-section form {
+    background-color: var(--off-white, #F8F6F2);
+    padding: 1.5rem;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.join-form-section form>label {
+    display: block;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-gray, #333333);
+}
+
+.join-form-section input[type="text"],
+.join-form-section input[type="email"],
+.join-form-section input[type="tel"],
+.join-form-section textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.4rem;
+    padding: 0.8rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #fff;
+    font: inherit;
+}
+
+.join-form-section textarea {
+    resize: vertical;
+}
+
+.join-form-section input:focus,
+.join-form-section textarea:focus {
+    outline: 3px solid rgba(224, 120, 86, 0.3);
+    border-color: var(--primary-orange, #E07856);
+}
+
+/* =========================================
+MEMBERSHIP RADIO BUTTONS
+========================================= */
+
+.join-form-section fieldset {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+.join-form-section legend {
+    padding: 0 0.5rem;
+    font-weight: 700;
+    color: var(--navy-blue, #1F3A5F);
+}
+
+.join-form-section fieldset label {
+    display: block;
+    margin: 0.8rem 0;
+    font-weight: 400;
+}
+
+.join-form-section fieldset input {
+    margin-right: 0.5rem;
+}
+
+/* =========================================
+SUBMIT BUTTON
+========================================= */
+
+.submit-button {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--navy-blue, #1F3A5F);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: var(--primary-orange, #E07856);
+}
+
+/* =========================================
+MEMBERSHIP CARDS
+========================================= */
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1.4rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+    
+    /*
+   W04 requirement:
+   animation on initial page display
+*/
+    opacity: 0;
+    transform: translateY(25px);
+    animation: membershipEntrance 0.8s ease forwards;
+
+}
+
+.np-card {
+    border-top: 6px solid #777;
+    animation-delay: 0.1s;
+}
+
+.bronze-card {
+    border-top: 6px solid #cd7f32;
+    animation-delay: 0.3s;
+}
+
+.silver-card {
+    border-top: 6px solid #999;
+    animation-delay: 0.5s;
+}
+
+.gold-card {
+    border-top: 6px solid #d4af37;
+    animation-delay: 0.7s;
+}
+
+@keyframes membershipEntrance {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.membership-card h3 {
+    color: var(--navy-blue, #1F3A5F);
+    margin-top: 0;
+}
+
+.membership-card p {
+    line-height: 1.5;
+}
+
+/* =========================================
+MODAL LINKS
+========================================= */
+
+.modal-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
+    background-color: var(--navy-blue, #1F3A5F);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.modal-link:hover,
+.modal-link:focus {
+    background-color: var(--primary-orange, #E07856);
+}
+
+/* =========================================
+MODALS
+========================================= */
+
+dialog {
+    width: min(90%, 550px);
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    position: relative;
+    padding: 2rem;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: var(--navy-blue, #1F3A5F);
+}
+
+.modal-content li {
+    margin-bottom: 0.7rem;
+    line-height: 1.5;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--navy-blue, #1F3A5F);
+    color: #fff;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    background-color: var(--primary-orange, #E07856);
+}
+
+/* =========================================
+DESKTOP
+Cards move to the right of the form
+========================================= */
+
+@media screen and (min-width: 640px) {
+
+    .join-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .membership-section {
+        position: sticky;
+        top: 1rem;
+    }
+
+}
+
+/* =========================================
+LARGE SCREENS
+========================================= */
+
+@media screen and (min-width: 900px) {
+
+    .join-container {
+        grid-template-columns: 1.4fr 1fr;
+        gap: 3rem;
+    }
+
+    .join-form-section form {
+        padding: 2rem;
+    }
+
+    .membership-card {
+        padding: 1.6rem;
+    }
+
+}
+
+/* =========================================
+REDUCED MOTION ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+ .membership-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+}

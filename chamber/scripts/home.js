@@ -1,3 +1,35 @@
+// ==========================================
+// FOOTER INFORMATION
+// ==========================================
+
+// Current year
+const currentYear = document.querySelector("#currentyear");
+
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
+
+// Last modified date
+const lastModified = document.querySelector("#lastModified");
+
+if (lastModified) {
+    lastModified.textContent = document.lastModified;
+}
+
+
+
+// ------------------------------
+// HAMBURGER MENU
+// ------------------------------
+
+const menuButton = document.querySelector("#menu-button");
+const navBar = document.querySelector(".nav-bar");
+
+menuButton.addEventListener("click", () => {
+    navBar.classList.toggle("show");
+});
+
+
 const apiKey = "a0032530c3d0b0bc648ca1ddf92d5302";
 const city = "Onitsha";
 const country = "NG";
