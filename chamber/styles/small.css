@@ -134,6 +134,7 @@ main {
 h1,
 h2,
 h3 {
+    font-family: "Merriweather", serif;
     color: var(--navy-blue);
 }
 
