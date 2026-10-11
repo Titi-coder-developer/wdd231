@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Book a nail care appointment at Titi Nail Studio. Explore nail services, prices, and nail designs in Nkwelle Ezunaka, Anambra State, Nigeria.">
+    <meta name="author" content="Chinweokwu Clementina Adindu">
+
+    <title>Titi Nail Studio | Book an Appointment</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Titi Nail Studio | Book an Appointment">
+    <meta property="og:description"
+        content="Choose your preferred nail service, date, and time at Titi Nail Studio in Nkwelle Ezunaka, Anambra State, Nigeria.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Titi-coder-developer.github.io/titi-nail-studio/booking.html">
+    <meta property="og:image"
+        content="https://Titi-coder-developer.github.io/titi-nail-studio/images/titi-nail-studio.webp">
+    <meta property="og:image:alt" content="Titi Nail Studio nail designs">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon(1).ico">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/booking.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="scripts/common.js" defer></script>
+    <script type="module" src="scripts/booking.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header>
+        <div class="site-branding">
+            <img src="images/titi-nail-studio-logo.webp" alt="Titi Nail Studio logo">
+            <span>Titi Nail Studio</span>
+        </div>
+
+        <button id="menu-button" class="hamburger" type="button" aria-label="Toggle navigation menu"
+            aria-controls="primary-navigation" aria-expanded="false">
+        </button>
+
+        <!-- Navigation -->
+        <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+                <li>
+                    <a href="booking.html" class="active" aria-current="page">Book Appointment</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- PAGE INTRODUCTION -->
+        <section class="booking-intro">
+            <h1>Book an Appointment</h1>
+
+            <p>
+                Your next beautiful nail look starts here.
+                Explore our services and nail designs, then choose
+                your preferred appointment date and time.
+            </p>
+        </section>
+
+        <!-- SERVICE AND NAIL DESIGN CATALOG -->
+        <section class="booking-catalog">
+            <h2>Explore Our Services and Nail Designs</h2>
+
+            <p>
+                Browse our available options. You can search for a
+                service or filter the catalog to find what you need.
+            </p>
+
+            <div class="catalog-controls">
+                <label for="catalog-search">Search services and designs</label>
+                <input type="search" id="catalog-search" placeholder="Search by name or description">
+
+                <label for="catalog-filter">Filter catalog</label>
+                <select id="catalog-filter">
+                    <option value="all">All Services and Designs</option>
+                    <option value="service">Nail Services</option>
+                    <option value="design">Nail Designs</option>
+                </select>
+            </div>
+
+            <p id="catalog-status" role="status" aria-live="polite">
+                Loading available services and designs...
+            </p>
+
+            <div id="booking-catalog-list" class="booking-catalog-list">
+                <!-- JavaScript displays catalog cards here. -->
+            </div>
+        </section>
+
+        <!-- APPOINTMENT FORM -->
+        <section class="appointment-section">
+            <h2>Request Your Appointment</h2>
+
+            <p>
+                Complete the form below with your preferred service
+                and appointment details.
+            </p>
+
+            <form id="booking-form" action="form-action.html" method="get">
+
+                <div class="form-group">
+                    <label for="customer-name">Full Name</label>
+                    <input type="text" id="customer-name" name="customerName" autocomplete="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-email">Email Address</label>
+                    <input type="email" id="customer-email" name="customerEmail" autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-phone">Phone Number</label>
+                    <input type="tel" id="customer-phone" name="customerPhone" autocomplete="tel" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service-select">Choose a Service or Design</label>
+                    <select id="service-select" name="service" required>
+                        <option value="">Select a service or design</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment-date">Preferred Date</label>
+                    <input type="date" id="appointment-date" name="appointmentDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment-time">Preferred Time</label>
+                    <select id="appointment-time" name="appointmentTime" required>
+                        <option value="">Select a preferred time</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-notes">
+                        Additional Information (Optional)
+                    </label>
+                    <textarea id="booking-notes" name="notes" rows="4"
+                        placeholder="Tell us about your preferred nail style or any special requests."></textarea>
+                </div>
+
+                <button type="submit" id="submit-booking">
+                    Submit Appointment
+                </button>
+
+                <p id="booking-message" role="status" aria-live="polite"></p>
+
+            </form>
+
+           <!--  <p class="booking-notice">
+                Submitting this form displays an appointment review.
+                It does not send a booking to the studio or confirm
+                an appointment.
+            </p>-->
+        </section>
+
+        <!-- ACCESSIBLE SERVICE DETAILS DIALOG -->
+        <dialog id="service-dialog" aria-labelledby="dialog-title">
+
+            <div class="dialog-content">
+                <button type="button" id="dialog-close" class="dialog-close" aria-label="Close service details">
+                    &times;
+                </button>
+
+                <h2 id="dialog-title">Service Details</h2>
+
+                <div id="dialog-details">
+                    <!-- JavaScript displays selected item details here. -->
+                </div>
+
+                <button type="button" id="dialog-book">
+                    Choose This Option
+                </button>
+            </div>
+
+        </dialog>
+
+        <!-- LOCATION AND HOURS -->
+        <section class="hours-location">
+
+            <div class="business-hours">
+                <h2>Business Hours</h2>
+
+                <ul>
+                    <li><span>Monday</span><span>9:00 AM – 6:00 PM</span></li>
+                    <li><span>Tuesday</span><span>9:00 AM – 6:00 PM</span></li>
+                    <li><span>Wednesday</span><span>9:00 AM – 6:00 PM</span></li>
+                    <li><span>Thursday</span><span>9:00 AM – 6:00 PM</span></li>
+                    <li><span>Friday</span><span>9:00 AM – 6:00 PM</span></li>
+                    <li><span>Saturday</span><span>9:00 AM – 5:00 PM</span></li>
+                    <li><span>Sunday</span><span>Closed</span></li>
+                </ul>
+            </div>
+
+            <div class="find-studio">
+                <h2>Find Our Studio</h2>
+
+                <p>Nkwelle Ezunaka, Anambra State, Nigeria</p>
+
+                <iframe
+                    src="https://maps.google.com/maps?q=Nkwelle%20Ezunaka%2C%20Anambra%20State%2C%20Nigeria&output=embed"
+                    title="Find Titi Nail Studio on Google Maps" loading="lazy" allowfullscreen>
+                </iframe>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/adindu-clementine" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+            </a>
+
+            <a href="#" aria-label="Twitter X">
+                <img src="images/twitter-x.svg" alt="Twitter X" width="16" height="16">
+            </a>
+
+            <a href="https://github.com/Titi-coder-developer" target="_blank" rel="noopener noreferrer">
+                <img src="images/github.svg" alt="GitHub" width="16" height="16">
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <img src="images/instagram.svg" alt="Instagram" width="16" height="16">
+            </a>
+        </div>
+
+        <p>
+            &copy;<span id="currentyear"></span>
+            • TITI NAIL STUDIO
+            • Nkwelle Ezunaka, Anambra State, Nigeria
+        </p>
+
+        <p>
+            Chinweokwu Clementina Adindu
+            • WDD 231 Web Frontend Development I
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+
+        <p>
+            <a href="attributions.html">Attributions</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

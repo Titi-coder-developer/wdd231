@@ -1,0 +1,128 @@
+[
+    {
+        "name": "Classic Manicure",
+        "description": "A simple manicure with nail shaping, cuticle care, gentle hand massage, and your choice of polish.",
+        "price": 50000,
+        "category": "Manicure",
+        "image": "images/classic-manicure.webp"
+    },
+    {
+        "name": "Gel Manicure",
+        "description": "A long-lasting manicure using gel polish for a smooth, glossy finish and durable wear.",
+        "price": 10000,
+        "category": "Manicure",
+        "image": "images/gel-polish2.webp"
+    },
+    {
+        "name": "Classic Pedicure",
+        "description": "A relaxing pedicure including nail shaping, cuticle care, exfoliation, and polish application.",
+        "price": 50000,
+        "category": "Pedicure",
+        "image": "images/classic-pedicure.webp"
+    },
+    {
+        "name": "Cat Eye Nail Design",
+        "description": "A striking nail design featuring a magnetic polish effect that creates a shimmering, cat-eye appearance.",
+        "price": 30000,
+        "category": "Nail Art",
+        "image": "images/cat-eye-nail2.webp"
+    },
+    {
+        "name": "Acrylic Refill",
+        "description": "Refresh and maintain your acrylic nails by filling new growth and restoring their neat appearance.",
+        "price": 10000,
+        "category": "Nail Extensions",
+        "image": "images/Acrylic2.webp"
+    },
+    {
+        "name": "Gel Nail Extensions",
+        "description": "Elegant gel extensions designed to provide beautiful length with a lightweight and natural appearance.",
+        "price": 15000,
+        "category": "Nail Extensions",
+        "image": "images/gel-nail-extensions.webp"
+    },
+    {
+        "name": "Press-On Nails",
+        "description": "Custom-made reusable press-on nails designed in your preferred shape, color, and style.",
+        "price": 8000,
+        "category": "Press-On Nails",
+        "image": "images/french-tip-design.webp"
+    },
+    {
+        "name": "French Tip Design",
+        "description": "A timeless French tip design with clean, elegant lines customized to your preferred nail style.",
+        "price": 7000,
+        "category": "Nail Art",
+        "image": "images/french-tip-design.webp"
+    },
+    {
+        "name": "Custom Nail Art",
+        "description": "Creative nail art customized with colors, patterns, decorations, and designs based on your preference.",
+        "price": 7000,
+        "category": "Nail Art",
+        "image": "images/images4.webp"
+    },
+    {
+        "name": "Chrome Nails",
+        "description": "A stylish chrome finish that gives your nails a smooth, reflective, and glamorous appearance.",
+        "price": 4000,
+        "category": "Nail Art",
+        "image": "images/chrome-nails2.webp"
+    },
+    {
+        "name": "Ombre Nails",
+        "description": "A beautiful blended nail design that transitions smoothly between two or more colors.",
+        "price": 7000,
+        "category": "Nail Art",
+        "image": "images/ombre-nails2.webp"
+    },
+    {
+        "name": "Nail Repair",
+        "description": "Professional repair for broken, cracked, or damaged nails to restore their neat appearance.",
+        "price": 15000,
+        "category": "Nail Care",
+        "image": "images/NailRepair.webp"
+    },
+    {
+        "name": "Nail Removal",
+        "description": "Safe removal of acrylic, gel, or artificial nails while helping to protect your natural nails.",
+        "price": 4000,
+        "category": "Nail Care",
+        "image": "images/nail-removal.webp"
+    },
+    {
+        "name": "Nail Treatment",
+        "description": "A nourishing nail care treatment designed to improve the appearance and condition of natural nails.",
+        "price": 15000,
+        "category": "Nail Care",
+        "image": "images/nail-treatment.webp"
+    },
+    {
+        "name": "Summer Classy Nails",
+        "description": "A stylish summer-inspired nail design featuring bright colors and elegant patterns for a fresh seasonal look.",
+        "price": 20000,
+        "category": "Nail Art",
+        "image": "images/Summer-Classy-Nails.webp"
+    },
+    {
+        "name": "Bridal Nail Package",
+        "description": "A special nail package for brides featuring manicure, elegant nail art, and a customized bridal design.",
+        "price": 100000,
+        "category": "Special Packages",
+        "image": "images/Bridal-Nail.webp"
+    },
+    {
+        "name": "Nail Art Package",
+        "description": "A complete nail styling package combining nail care, polish, and customized decorative nail art.",
+        "price": 80000,
+        "category": "Special Packages",
+        "image": "images/Nail-Art-Package.webp"
+    },
+    {
+        "name": "Eyelash Extensions",
+        "description": "Enhance your lashes with extensions designed to add length, volume, and definition for a fuller appearance.",
+        "price": 10000,
+        "category": "Eyelash Extensions",
+        "image": "images/eyelash-extensions.webp"
+    }
+]

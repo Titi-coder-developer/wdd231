@@ -4,285 +4,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Titi Nail Studio WDD 231 Individual Project Site Plan.">
+    <meta name="description"
+        content="Discover nail care services, beautiful nail designs, prices, and appointment booking at Titi Nail Studio.">
     <meta name="author" content="Chinweokwu Clementina Adindu">
 
-    <title>Titi Nail Studio | Site Plan</title>
-    <link rel="stylesheet" href="styles/small.css">
+    <title>Titi Nail Studio | Home</title>
 
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Titi Nail Studio | Home">
+    <meta property="og:description"
+        content="Discover beautiful nail designs, professional nail care services, prices, and appointment booking at Titi Nail Studio in Nkwelle Ezunaka, Anambra State, Nigeria.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Titi-coder-developer.github.io/titi-nail-studio/">
+    <meta property="og:image"
+        content="https://Titi-coder-developer.github.io/titi-nail-studio/images/titi-nail-studio.webp">
+    <meta property="og:image:alt" content="Beautiful nail designs at Titi Nail Studio">
+
+    <!-- FAVICON-->
+    <link rel="icon" href="images/favicon(1).ico">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS SECTION-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/common.js" defer></script>
+    <script type="module" src="scripts/home.js"></script>
+    
 </head>
 
 <body>
 
+    <!-- header section-->
     <header>
-        <h1>Titi Nail Studio</h1>
-        <p>WDD 231 Individual Project Site Plan</p>
+        <div class="site-branding">
+            <img src="images/titi-nail-studio-logo.webp" alt="Titi Nail Studio logo">
+            <span>Titi Nail Studio</span>
+        </div>
+
+        <button id="menu-button" class="hamburger" type="button" aria-label="Toggle navigation menu"
+            aria-controls="primary-navigation" aria-expanded="false">
+        </button>
+
+        <!-- Navigation bar-->
+        <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Book Appointment</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Main Section-->
     <main>
+        <!-- Hero section-->
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/titi-nail-studio-larger.webp">
+                <source media="(min-width: 768px)" srcset="images/titi-nail-studio-medium.webp">
+                <source media="(max-width: 767px)" srcset="images/titi-nail-studio-small.webp">
+                <img src="images/titi-nail-studio.webp" alt="Beautiful nail designs at Titi Nail Studio" width="1200" height="650"
+                    fetchpriority="high">
+            </picture>
 
-        <!-- SITE NAME -->
-        <section>
-            <h2>1. Site Name</h2>
+            <div class="hero-content">
+                <p class="hero-tagline">TITI NAIL STUDIO</p>
 
-            <h3>Titi Nail Studio</h3>
+                <h1 class="hero-text">Bringing Fashion to your<br>Fingertips.</h1>
 
-            <p>
-                The name "Titi Nail Studio" was chosen because the website
-                represents a personal nail-care and beauty business. The name
-                is simple, easy to remember, and suitable for creating a
-                recognizable nail business brand.
-            </p>
+                <div class="hero-buttons">
+                    <a href="booking.html" class="booking-button">Book An Appointment</a>
+
+                </div>
+            </div>
         </section>
 
-        <!-- SITE PURPOSE -->
-        <section>
-            <h2>2. Site Purpose</h2>
+        <!--Featured services-->
+        <section class="featured-services">
+            <h2>Featured Services</h2>
 
-            <p>
-                The purpose of Titi Nail Studio is to provide customers with
-                information about nail-care and beauty services.
-            </p>
-
-            <p>
-                The website will allow visitors to view available nail
-                services, prices, service descriptions, and different nail
-                designs.
-            </p>
-
-            <p>
-                Customers will also be able to book a nail appointment online
-                by providing their contact information, selecting a service,
-                and choosing a preferred date and time.
-            </p>
-
-            <p>
-                The website will provide a simple and convenient way for
-                customers to learn about Titi Nail Studio and request an
-                appointment.
-            </p>
-        </section>
-
-        <!-- SCENARIOS -->
-        <section>
-            <h2>3. Scenarios</h2>
-
-            <p>
-                The following questions represent what potential customers
-                may want to know when visiting the website:
-            </p>
-
-            <ol>
-                <li>
-                    What nail services are available and how much does each
-                    service cost?
-                </li>
-
-                <li>
-                    How can I book an appointment for a manicure, pedicure,
-                    or nail design?
-                </li>
-
-                <li>
-                    What types of nail designs are available?
-                </li>
-
-                <li>
-                    How long does each nail service take?
-                </li>
-
-                <li>
-                    Where is Titi Nail Studio located and how can I contact
-                    the business?
-                </li>
-            </ol>
-        </section>
-
-        <!-- COLOR SCHEME -->
-        <section>
-            <h2>4. Color Scheme</h2>
-
-            <p>
-                The website will use a soft, elegant, and feminine color
-                scheme that represents beauty, creativity, and
-                professionalism.
-            </p>
-
-            <div class="color-container">
-
-                <div class="color-box primary">
-                    <span>Dark Berry</span>
-                    <span>#8B3A62</span>
-                </div>
-
-                <div class="color-box secondary">
-                    <span>Soft Pink</span>
-                    <span>#F4D7E3</span>
-                </div>
-
-                <div class="color-box accent">
-                    <span>Rose</span>
-                    <span>#D89AB5</span>
-                </div>
-
-                <div class="color-box background">
-                    <span>Light Pink</span>
-                    <span>#FFF8FB</span>
-                </div>
-
-                <div class="color-box text">
-                    <span>Dark Gray</span>
-                    <span>#333333</span>
-                </div>
+            <div id="featured-services-list">
+                <!-- JavaScript will display the featured services here -->
 
             </div>
+        </section>
+        
+        
+        <!-- Nail design -->
+        <section class="nail-designs">
+            <h2>Nail Designs & Ready-Made Nails</h2>
+        
+            <p>
+                Explore beautiful nail designs and ready-made nails
+                to complement your personal style.
+            </p>
+        
+            <div id="nail-design-list">
+                <!-- JavaScript will display the designs here -->
 
-            <ul>
-                <li>
-                    <strong>#8B3A62:</strong>
-                    Used for the header, footer, headings, navigation,
-                    and important buttons.
-                </li>
-
-                <li>
-                    <strong>#F4D7E3:</strong>
-                    Used for soft backgrounds and supporting sections.
-                </li>
-
-                <li>
-                    <strong>#D89AB5:</strong>
-                    Used for borders, accents, highlights, and secondary
-                    buttons.
-                </li>
-
-                <li>
-                    <strong>#FFF8FB:</strong>
-                    Used as the main page background.
-                </li>
-
-                <li>
-                    <strong>#333333:</strong>
-                    Used for paragraphs and general text.
-                </li>
-            </ul>
+            </div>
         </section>
 
-        <!-- TYPOGRAPHY -->
-        <section>
-            <h2>5. Typography</h2>
-
-            <h3>Georgia</h3>
-
-            <p>
-                Georgia will be used for the website title, main headings,
-                and section headings. It provides an elegant appearance
-                that fits the beauty and nail-care theme.
-            </p>
-
-            <h3>Arial</h3>
-
-            <p>
-                Arial will be used for paragraphs, navigation, forms,
-                labels, buttons, and general website content. It is simple
-                and easy to read on both mobile and desktop screens.
-            </p>
+        <section class="hours-location">
+        
+            <div class="business-hours">
+                <h2>Business Hours</h2>
+                
+                <ul>
+                    <li><span>Monday</span><span>9:00 AM – 6:00 PM</span></li>
+                    <li><span>Tuesday</span><span>9:00 AM – 6:00 PM</span></li>
+                    <li><span>Wednesday</span><span>9:00 AM – 6:00 PM</span></li>
+                    <li><span>Thursday</span><span>9:00 AM – 6:00 PM</span></li>
+                    <li><span>Friday</span><span>9:00 AM – 6:00 PM</span></li>
+                    <li><span>Saturday</span><span>9:00 AM – 5:00 PM</span></li>
+                    <li><span>Sunday</span><span>Closed</span></li>
+                </ul>
+            </div>
+        
+            <div class="find-studio">
+                <h2>Find Our Studio</h2>
+                <p>Nkwelle Ezunaka, Anambra State, Nigeria</p>
+        
+                <iframe src="https://maps.google.com/maps?q=Nkwelle%20Ezunaka%2C%20Anambra%20State%2C%20Nigeria&output=embed"
+                    title="Find Titi Nail Studio on Google Maps" loading="lazy" allowfullscreen>
+                </iframe>
+            </div>
+        
         </section>
 
-        <!-- WIREFRAME -->
-        <section>
-            <h2>6. Wireframe</h2>
-
+        <!-- Call to action-->
+        <section class="call-to-action">
+            <h2>Ready for Your Next Nail Look?</h2>
+        
             <p>
-                The home page will have two wireframes: one for a small
-                mobile viewport and another for a larger desktop viewport.
-                The wireframes will show the basic structure and placement
-                of the website content before detailed colors, images, and
-                styling are added.
+                Book an appointment and let us create a beautiful look
+                for your fingertips.
             </p>
-
-            <div class="wireframe-note">
-                <strong>Important:</strong>
-                The final wireframes for this project will be created as
-                black-and-white sketches. 
-            </div>
-
-            <h3>Small Viewport - Mobile</h3>
-
-            <div class="wireframe">
-                ┌─────────────────────┐
-                │ TITI NAIL STUDIO ☰ │
-                ├─────────────────────┤
-                │ │
-                │ HERO IMAGE │
-                │ │
-                │ Beautiful Nails │
-                │ Book Appointment │
-                ├─────────────────────┤
-                │ SERVICES │
-                │ │
-                │ Manicure │
-                │ Pedicure │
-                │ Nail Designs │
-                ├─────────────────────┤
-                │ NAIL DESIGNS │
-                │ │
-                │ [Images] │
-                ├─────────────────────┤
-                │ BOOK APPOINTMENT │
-                ├─────────────────────┤
-                │ CONTACT │
-                ├─────────────────────┤
-                │ FOOTER │
-                └─────────────────────┘
-            </div>
-
-            <h3>Large Viewport - Desktop</h3>
-
-            <div class="wireframe">
-                ┌─────────────────────────────────────────────┐
-                │ TITI NAIL STUDIO Home Services Book │
-                ├─────────────────────────────────────────────┤
-                │ │
-                │ HERO IMAGE │
-                │ │
-                │ Beautiful Nails, Beautiful You │
-                │ BOOK APPOINTMENT │
-                │ │
-                ├─────────────────────────────────────────────┤
-                │ OUR SERVICES │
-                │ │
-                │ MANICURE PEDICURE NAIL DESIGN │
-                │ │
-                ├─────────────────────────────────────────────┤
-                │ NAIL DESIGNS │
-                │ │
-                │ [IMAGE] [IMAGE] [IMAGE] │
-                │ │
-                ├─────────────────────────────────────────────┤
-                │ BOOK APPOINTMENT │
-                ├─────────────────────────────────────────────┤
-                │ CONTACT / LOCATION │
-                ├─────────────────────────────────────────────┤
-                │ FOOTER │
-                └─────────────────────────────────────────────┘
-            </div>
-
-            <p>
-                These sketches represent the planned structure of the home
-                page. The actual black-and-white wireframe images will be
-                created separately and added to the project.
-            </p>
+        
+            <a href="booking.html">Book An Appointment</a>
         </section>
 
     </main>
-
+    
+    <!-- FOOTER SECTION -->
     <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/adindu-clementine" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+            </a>
+    
+            <a href="#" target="_blank">
+                <img src="images/twitter-x.svg" alt="Twitter X" width="16" height="16">
+            </a>
+    
+            <a href="https://github.com/Titi-coder-developer" target="_blank"  rel="noopener noreferrer">
+                <img src="images/github.svg" alt="GitHub" width="16" height="16">
+            </a>
+    
+            <a href="#" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram" width="16" height="16">
+            </a>
+        </div>
+    
         <p>
-            &copy; 2026 Titi Nail Studio |
-            WDD 231 Individual Project
+            &copy;<span id="currentyear"></span>
+            • TITI NAIL STUDIO
+            • Nkwelle Ezunaka, Anambra State, Nigeria
         </p>
+    
+        <p>
+            Chinweokwu Clementina Adindu
+            • WDD 231 Web Frontend Development I
+        </p>
+    
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+
+        <p>
+            <a href="attributions.html">Attributions</a>
+        </p>
+    
     </footer>
+
 
 </body>
 

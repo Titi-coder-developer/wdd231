@@ -1,0 +1,206 @@
+/* ==========================================
+   TITI NAIL STUDIO
+   TABLET AND DESKTOP STYLES
+   ========================================== */
+
+/* TABLETS: 600px AND ABOVE */
+
+@media screen and (min-width: 600px) {
+
+    /* HEADER */
+
+    header {
+        padding: 1rem 1.5rem;
+    }
+
+    .site-branding img {
+        width: 54px;
+        height: 54px;
+    }
+
+    /* HIDE HAMBURGER AND SHOW NAVIGATION */
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        flex-basis: auto;
+        width: auto;
+        margin-left: auto;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.35rem;
+    }
+
+    .navigation a {
+        padding: 0.75rem;
+    }
+
+    .navigation a.active {
+        border-left: 0;
+        border-bottom: 3px solid var(--primary-color);
+        border-radius: 0;
+    }
+
+    /* HERO SECTION */
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero-content {
+        padding: 4rem 2rem;
+    }
+
+    /* FEATURED SERVICES AND NAIL DESIGNS */
+
+    #featured-services-list,
+    #nail-design-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    #featured-services-list>*,
+    #nail-design-list>* {
+        padding: 1.25rem;
+    }
+
+    /* PAGE SECTIONS */
+
+    section {
+        padding: 4rem 2rem;
+    }
+
+    /* BUSINESS HOURS AND STUDIO LOCATION */
+
+    .hours-location {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: stretch;
+        gap: 1.5rem;
+    }
+
+    .find-studio iframe {
+        height: 300px;
+    }
+
+    /* ATTRIBUTIONS PAGE */
+
+    .attributions-section {
+        padding: 4rem 2rem;
+    }
+
+    .attributions-section>h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    .attributions-section>h2 {
+        margin-top: 3rem;
+        font-size: 1.7rem;
+    }
+
+    .attributions-section .call-to-action {
+        padding: 3rem 2rem;
+    }
+}
+
+/* DESKTOP: 900px AND ABOVE */
+
+@media screen and (min-width: 900px) {
+
+    /* HEADER */
+
+    header {
+        padding-inline: max(2rem, calc((100% - 1200px) / 2));
+    }
+
+    .navigation ul {
+        gap: 0.75rem;
+    }
+
+    .navigation a {
+        padding: 0.8rem 1rem;
+    }
+
+    /* HERO SECTION */
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        padding-inline: 2rem;
+    }
+
+    /* THREE SERVICE CARDS PER ROW */
+
+    #featured-services-list,
+    #nail-design-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.75rem;
+    }
+
+    /* PAGE SECTIONS */
+
+    section {
+        padding: 5rem 2rem;
+    }
+
+    /* BUSINESS HOURS AND MAP */
+
+    .hours-location {
+        gap: 2rem;
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+
+    .find-studio iframe {
+        height: 350px;
+    }
+
+    /* CARD HOVER EFFECT */
+
+    #featured-services-list>*,
+    #nail-design-list>* {
+        transition: transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    #featured-services-list>*:hover,
+    #nail-design-list>*:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* LARGE DESKTOPS: 1200px AND ABOVE */
+
+@media screen and (min-width: 1200px) {
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .hero-content {
+        padding-inline: 0;
+    }
+}
+
+/* ACCESSIBILITY: REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #featured-services-list>*,
+    #nail-design-list>* {
+        transition: none;
+    }
+
+    #featured-services-list>*:hover,
+    #nail-design-list>*:hover {
+        transform: none;
+    }
+}

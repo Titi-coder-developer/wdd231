@@ -1,0 +1,68 @@
+/* ==============================
+   NORMALIZE AND RESET
+   Titi Nail Studio
+   ============================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding-left: 1.5rem;
+}
+
+img,
+picture,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+[hidden] {
+    display: none !important;
+}

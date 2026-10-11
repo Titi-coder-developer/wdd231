@@ -1,177 +1,628 @@
+/* ==========================================
+   TITI NAIL STUDIO
+   MOBILE-FIRST SHARED STYLES
+   ========================================== */
 
+/* 1. COLOR SCHEME */
 
-/* ------------------------------
-           COLOR SCHEME
-        ------------------------------ */
 :root {
     --primary-color: #8B3A62;
     --secondary-color: #F4D7E3;
     --accent-color: #D89AB5;
     --background-color: #FFF8FB;
     --text-color: #333333;
+    --body-text-color: #FFFFFF;
+    --surface-color: #FFFFFF;
+    --muted-text-color: #5F5057;
+    --border-color: #E5C7D5;
+    --border-bottom: 1px solid #DDDDDD;
+    --border-radius: 12px;
+    --box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    --content-width: 1200px;
 }
 
-/* ------------------------------
-           GENERAL STYLES
-        ------------------------------ */
+/* 2. GENERAL STYLES */
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
-/* ------------------------------
-           HEADER
-        ------------------------------ */
-header {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.3;
 }
 
-header h1 {
-    margin: 0;
-    font-family: Georgia, serif;
-    font-size: 2.5rem;
+h1,
+h2,
+h3 {
+    color: var(--primary-color);
 }
 
-header p {
-    margin-bottom: 0;
-}
-
-/* ------------------------------
-           MAIN CONTENT
-        ------------------------------ */
-main {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-}
-
-section {
-    background-color: white;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-left: 5px solid var(--accent-color);
-    border-radius: 6px;
+h1 {
+    font-size: clamp(2rem, 7vw, 3.5rem);
 }
 
 h2 {
-    color: var(--primary-color);
-    font-family: Georgia, serif;
-    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font-size: clamp(1.6rem, 5vw, 2.3rem);
 }
 
 h3 {
-    color: var(--primary-color);
-    font-family: Georgia, serif;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
 }
 
-/* ------------------------------
-           COLOR SWATCHES
-        ------------------------------ */
-.color-container {
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+section {
+    padding: 3rem 1rem;
+}
+
+section>h2 {
+    text-align: center;
+}
+
+/* 3. HEADER */
+
+header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--surface-color);
+    box-shadow: var(--box-shadow);
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    min-width: 0;
+}
+
+.site-branding img {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+}
+
+.site-branding span {
+    color: var(--primary-color);
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    line-height: 1.2;
+}
+
+/* 4. MOBILE HAMBURGER BUTTON */
+
+.hamburger {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.6rem;
+}
+
+.hamburger[aria-expanded="true"]::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/* 5. NAVIGATION */
+
+.navigation {
+    display: none;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+}
+
+.navigation a.active {
+    border-left: 4px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    font-weight: 700;
+}
+
+/* 6. HERO SECTION */
+
+.hero {
+    position: relative;
+    display: grid;
+    align-items: center;
+    min-height: 420px;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    color: var(--body-text-color);
+}
+
+.hero picture {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(45, 15, 31, 0.82),
+            rgba(45, 15, 31, 0.3));
+    content: "";
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: var(--content-width);
+    margin-inline: auto;
+    padding: 3rem 1.25rem;
+}
+
+.hero-tagline {
+    margin-bottom: 1rem;
+    color: #FFEAF2;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin-bottom: 1.5rem;
+    color: var(--body-text-color);
+}
+
+.hero-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin: 1rem 0;
 }
 
-.color-box {
-    width: 150px;
-    min-height: 90px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border-radius: 6px;
-    font-weight: bold;
-}
+/* 7. BUTTONS AND LINKS */
 
-.primary {
-    background-color: #8B3A62;
-    color: white;
-}
-
-.secondary {
-    background-color: #F4D7E3;
-    color: #333333;
-}
-
-.accent {
-    background-color: #D89AB5;
-    color: white;
-}
-
-.background {
-    background-color: #FFF8FB;
-    color: #333333;
-    border: 1px solid #D89AB5;
-}
-
-.text {
-    background-color: #333333;
-    color: white;
-}
-
-/* ------------------------------
-           WIREFRAME AREA
-        ------------------------------ */
-.wireframe-note {
-    background-color: var(--secondary-color);
-    padding: 1rem;
-    border-radius: 6px;
-}
-
-.wireframe {
-    background-color: white;
-    border: 2px solid #333333;
-    padding: 1rem;
-    margin: 1rem 0;
-    font-family: Arial, sans-serif;
-    white-space: pre-line;
-    overflow-x: auto;
-}
-
-/* ------------------------------
-           FOOTER
-        ------------------------------ */
-footer {
+.booking-button,
+.call-to-action>a,
+.primary-button {
+    display: inline-block;
+    padding: 0.85rem 1.25rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--body-text-color);
+    font-weight: 700;
     text-align: center;
-    padding: 1rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
 }
 
-/* ------------------------------
-           RESPONSIVE DESIGN
-        ------------------------------ */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2rem;
-    }
+.booking-button:hover,
+.call-to-action>a:hover,
+.primary-button:hover {
+    border-color: #692744;
+    background-color: #692744;
+    color: var(--body-text-color);
+    text-decoration: none;
+}
 
-    main {
-        padding: 1rem;
-    }
+/* 8. FEATURED SERVICES AND NAIL DESIGNS */
 
-    section {
-        padding: 1rem;
-    }
+.featured-services,
+.nail-designs {
+    max-width: var(--content-width);
+    margin-inline: auto;
+}
 
-    .color-container {
-        flex-direction: column;
-    }
+.featured-services>p,
+.nail-designs>p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    color: var(--muted-text-color);
+    text-align: center;
+}
 
-    .color-box {
-        width: 100%;
+#featured-services-list,
+#nail-design-list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+/* CARDS GENERATED BY JAVASCRIPT */
+
+#featured-services-list>*,
+#nail-design-list>* {
+    min-width: 0;
+    padding: 1rem;
+    overflow-wrap: anywhere;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--surface-color);
+    box-shadow: var(--box-shadow);
+}
+
+#featured-services-list img,
+#nail-design-list img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#featured-services-list h3,
+#nail-design-list h3 {
+    color: var(--primary-color);
+}
+
+#featured-services-list p,
+#nail-design-list p {
+    color: var(--muted-text-color);
+}
+
+#featured-services-list button,
+#nail-design-list button,
+#featured-services-list a,
+#nail-design-list a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.7rem 1rem;
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: var(--body-text-color);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+#featured-services-list button:hover,
+#nail-design-list button:hover,
+#featured-services-list a:hover,
+#nail-design-list a:hover {
+    background-color: #692744;
+}
+
+/* 9.  BUSINESS HOURS AND STUDIO MAP */
+
+.business-hours ul {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--surface-color);
+    list-style: none;
+}
+
+.business-hours li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    border-bottom: var(--border-bottom);
+}
+
+.business-hours li:last-child {
+    border-bottom: 0;
+}
+
+.business-hours li span:first-child {
+    font-weight: 700;
+}
+
+.business-hours li span:last-child {
+    text-align: right;
+}
+
+.hours-location {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 1rem;
+}
+
+.business-hours,
+.find-studio {
+    min-width: 0;
+    padding: 1.25rem;
+    background-color: var(--background-color);
+    border-top: 4px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.business-hours h2,
+.find-studio h2 {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 12px;
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
+.business-hours p,
+.find-studio p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.find-studio iframe {
+    display: block;
+    width: 100%;
+    height: 250px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* 10. CALL TO ACTION */
+
+.call-to-action {
+    background-color: var(--primary-color);
+    color: var(--body-text-color);
+    text-align: center;
+}
+
+.call-to-action h2 {
+    color: var(--body-text-color);
+}
+
+.call-to-action p {
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+}
+
+.call-to-action>a {
+    border-color: var(--body-text-color);
+    background-color: var(--body-text-color);
+    color: var(--primary-color);
+}
+
+.call-to-action>a:hover {
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* 11. FOOTER */
+
+footer {
+    padding: 2rem 1rem;
+    background-color: #54223D;
+    color: var(--body-text-color);
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--body-text-color);
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+}
+
+footer p {
+    margin-bottom: 0.75rem;
+    overflow-wrap: anywhere;
+}
+
+footer a {
+    color: #FFEAF2;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--body-text-color);
+}
+
+
+
+
+/* 12. ACCESSIBILITY: REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto;
+        transition-duration: 0.01ms;
+        animation-duration: 0.01ms;
+        animation-iteration-count: 1;
     }
+}
+
+
+/* ==========================================
+   TITI NAIL STUDIO
+   ATTRIBUTIONS PAGE
+   ========================================== */
+
+.attributions-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+}
+
+.attributions-section>h1 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.attributions-section>p {
+    max-width: 800px;
+    margin: 0 auto 1.25rem;
+    color: var(--muted-text-color);
+    line-height: 1.8;
+}
+
+.attributions-section>h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.attributions-section>p a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+}
+
+.attributions-section>p a:hover {
+    color: #692744;
+}
+
+/* ATTRIBUTIONS CALL TO ACTION */
+
+.attributions-section .call-to-action {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--body-text-color);
+    text-align: center;
+}
+
+.attributions-section .call-to-action h2 {
+    margin-top: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+    color: var(--body-text-color);
+}
+
+.attributions-section .call-to-action p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    color: var(--body-text-color);
+}
+
+.attributions-section .call-to-action a {
+    display: inline-block;
+    padding: 0.85rem 1.25rem;
+    border: 2px solid var(--body-text-color);
+    border-radius: 8px;
+    background-color: var(--body-text-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.attributions-section .call-to-action a:hover {
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
 }

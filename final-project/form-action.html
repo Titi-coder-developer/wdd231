@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Titi Nail Studio appointment submission details.">
+    <meta name="author" content="Chinweokwu Clementina Adindu">
+
+    <title>Appointment Submitted | Titi Nail Studio</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Titi Nail Studio | Appointment Submitted">
+    <meta property="og:description"
+        content="Thank you for choosing Titi Nail Studio. Review your submitted appointment details and return to the booking page to make another appointment.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Titi-coder-developer.github.io/titi-nail-studio/form-action.html">
+    <meta property="og:image"
+        content="https://Titi-coder-developer.github.io/titi-nail-studio/images/titi-nail-studio.webp">
+    <meta property="og:image:alt" content="Titi Nail Studio nail designs and services">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon(1).ico">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/form-action.css">
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/form-action.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="site-branding">
+            <img src="images/titi-nail-studio-logo.webp" alt="Titi Nail Studio logo">
+            <span>Titi Nail Studio</span>
+        </div>
+
+        <button id="menu-button" class="hamburger" type="button" aria-label="Open navigation menu"
+            aria-controls="primary-navigation" aria-expanded="false">
+        </button>
+
+        <!-- NAVIGATION -->
+        <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <section class="booking-intro">
+            <h1>Appointment Submission</h1>
+            <p>Thank you for choosing Titi Nail Studio.</p>
+        </section>
+
+        <section class="appointment-section">
+            <h2>Appointment Details</h2>
+
+            <p id="form-message" aria-live="polite">
+                Loading submitted details...
+            </p>
+
+            <div id="appointment-info"></div>
+
+            <p>
+                <a href="booking.html" class="call-to-action">
+                    Return to Booking
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span>
+            • TITI NAIL STUDIO
+            • Nkwelle Ezunaka, Anambra State, Nigeria
+        </p>
+
+        <p>
+            Chinweokwu Clementina Adindu
+            • WDD 231 Web Frontend Development I
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+
+        <p>
+            <a href="attributions.html">Attributions</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

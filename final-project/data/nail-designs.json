@@ -1,0 +1,82 @@
+[
+    {
+        "id": "french-tips",
+        "name": "French Tip Nails",
+        "description": "Classic white tips with a natural base for an elegant, timeless look.",
+        "price": 8000,
+        "category": "Elegant",
+        "image": "images/french-tip-design.webp"
+    },
+    {
+        "id": "chrome-nails",
+        "name": "Chrome Nails",
+        "description": "Eye-catching metallic nails with a glossy, mirror-like finish.",
+        "price": 10000,
+        "category": "Glamorous",
+        "image": "images/chrome-nails2.webp"
+    },
+    {
+        "id": "ombre-nails",
+        "name": "Ombre Nails",
+        "description": "Beautiful blended colours that create a soft gradient effect.",
+        "price": 10000,
+        "category": "Elegant",
+        "image": "images/ombre-nails.webp"
+    },
+    {
+        "id": "cat-eye-nails",
+        "name": "Cat-Eye Nails",
+        "description": "Shimmering magnetic polish that creates a captivating light effect.",
+        "price": 12000,
+        "category": "Glamorous",
+        "image": "images/cat-eye-nail2.webp"
+    },
+    {
+        "id": "glitter-nails",
+        "name": "Glitter Nails",
+        "description": "Sparkling nail designs perfect for parties, birthdays, and celebrations.",
+        "price": 10000,
+        "category": "Glamorous",
+        "image": "images/glitter-nails.webp"
+    },
+    {
+        "id": "floral-nails",
+        "name": "Floral Nails",
+        "description": "Beautiful flower-inspired details for a soft, feminine look.",
+        "price": 10000,
+        "category": "Nail Art",
+        "image": "images/flora-nail.webp"
+    },
+    {
+        "id": "nude-nails",
+        "name": "Nude Nails",
+        "description": "Simple, natural-looking nude shades for a neat and sophisticated appearance.",
+        "price": 7000,
+        "category": "Elegant",
+        "image": "images/gel-polish2.webp"
+    },
+    {
+        "id": "3d-nail-art",
+        "name": "3D Nail Art",
+        "description": "Creative raised decorations such as flowers, bows, and pearls.",
+        "price": 15000,
+        "category": "Nail Art",
+        "image": "images/3d-nail-arts.webp"
+    },
+    {
+        "id": "marble-nails",
+        "name": "Marble Nails",
+        "description": "Stylish marble-inspired patterns with beautiful flowing colours.",
+        "price": 12000,
+        "category": "Nail Art",
+        "image": "images/marble-nails.webp"
+    },
+    {
+        "id": "press-on-nails",
+        "name": "Ready-Made Press-On Nails",
+        "description": "Stylish, ready-made nail sets for a quick and convenient beauty look.",
+        "price": 6000,
+        "category": "Ready-Made Nails",
+        "image": "images/press-on-nails1.webp"
+    }
+]

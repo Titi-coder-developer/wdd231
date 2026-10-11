@@ -1,0 +1,460 @@
+
+/* ==========================================
+   TITI NAIL STUDIO
+   BOOKING PAGE STYLES
+   ========================================== */
+
+
+/* 1. SITE PLAN COLORS */
+
+:root {
+    --booking-primary: #8B3A62;
+    --booking-secondary: #F4D7E3;
+    --booking-accent: #D89AB5;
+    --booking-background: #FFF8FB;
+    --booking-text: #333333;
+    --booking-surface: #FFFFFF;
+    --booking-muted: #5F5057;
+    --booking-border: #E5C7D5;
+    --booking-radius: 12px;
+    --booking-shadow: 0 3px 12px rgba(65, 25, 45, 0.12);
+}
+
+
+/* 2. GENERAL PAGE STYLES */
+
+body {
+    background-color: var(--booking-background);
+    color: var(--booking-text);
+    font-family: "DM Sans", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    width: min(100% - 2rem, 1200px);
+    margin: 0 auto;
+}
+
+main h1,
+main h2,
+main h3 {
+    color: var(--booking-primary);
+    font-family: "Playfair Display", Georgia, serif;
+    line-height: 1.3;
+}
+
+main h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+main h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 0.75rem;
+}
+
+main p {
+    color: var(--booking-muted);
+}
+
+
+/* 3. BOOKING PAGE INTRODUCTION */
+
+.booking-intro {
+    margin: 2rem 0;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    border-radius: var(--booking-radius);
+    background-color: var(--booking-secondary);
+    text-align: center;
+}
+
+.booking-intro p {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+
+/* 4. SERVICE AND DESIGN CATALOG */
+
+.booking-catalog,
+.appointment-section {
+    margin: 2rem 0;
+    padding: clamp(1rem, 3vw, 2rem);
+    border: 1px solid var(--booking-border);
+    border-radius: var(--booking-radius);
+    background-color: var(--booking-surface);
+    box-shadow: var(--booking-shadow);
+}
+
+
+/* 5. SEARCH AND FILTER */
+
+.catalog-controls {
+    display: grid;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.catalog-controls label,
+.form-group label {
+    color: var(--booking-primary);
+    font-weight: 600;
+}
+
+.catalog-controls input,
+.catalog-controls select,
+.form-group input,
+.form-group select,
+.form-group textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 46px;
+    padding: 0.75rem;
+    border: 1px solid var(--booking-border);
+    border-radius: 8px;
+    background-color: var(--booking-surface);
+    color: var(--booking-text);
+    font: inherit;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.catalog-controls input:focus-visible,
+.catalog-controls select:focus-visible,
+.form-group input:focus-visible,
+.form-group select:focus-visible,
+.form-group textarea:focus-visible {
+    outline: 3px solid var(--booking-accent);
+    outline-offset: 2px;
+}
+
+#catalog-status,
+#booking-message {
+    min-height: 1.5rem;
+    font-weight: 600;
+}
+
+
+/* 6. CATALOG GRID */
+
+.booking-catalog-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+
+/* 7. CATALOG CARDS */
+
+.booking-card,
+.catalog-card,
+.service-card,
+.design-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--booking-border);
+    border-radius: var(--booking-radius);
+    background-color: var(--booking-surface);
+    box-shadow: var(--booking-shadow);
+}
+
+.booking-card img,
+.catalog-card img,
+.service-card img,
+.design-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background-color: var(--booking-secondary);
+}
+
+.booking-card-content,
+.catalog-card-content,
+.service-card-content,
+.design-card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+    padding: 1rem;
+}
+
+.booking-card h3,
+.catalog-card h3,
+.service-card h3,
+.design-card h3 {
+    margin: 0;
+    color: var(--booking-primary);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.25rem;
+}
+
+.booking-card p,
+.catalog-card p,
+.service-card p,
+.design-card p {
+    margin: 0;
+}
+
+/* Support the price class names used by the JavaScript. */
+
+.booking-card .price,
+.booking-card .catalog-price,
+.catalog-card .price,
+.catalog-card .catalog-price,
+.service-card .price,
+.design-card .price {
+    color: var(--booking-primary);
+    font-weight: 700;
+}
+
+
+/* 8. BUTTONS */
+
+main button {
+    display: inline-block;
+    padding: 0.8rem 1.15rem;
+    border: 2px solid var(--booking-primary);
+    border-radius: 8px;
+    background-color: var(--booking-primary);
+    color: #FFFFFF;
+    font: inherit;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+main button:hover {
+    border-color: #6F2C4D;
+    background-color: #6F2C4D;
+}
+
+main button:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--booking-accent);
+    outline-offset: 3px;
+}
+
+
+/* 9. APPOINTMENT FORM */
+
+#booking-form {
+    display: grid;
+    gap: 1.15rem;
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.45rem;
+}
+
+#submit-booking {
+    width: 100%;
+    margin-top: 0.25rem;
+}
+
+.booking-notice {
+    margin-top: 1.25rem;
+    padding: 0.85rem 1rem;
+    border-left: 4px solid var(--booking-accent);
+    border-radius: 0 8px 8px 0;
+    background-color: var(--booking-secondary);
+    font-size: 0.95rem;
+}
+
+
+/* 10. ACCESSIBLE SERVICE DETAILS DIALOG */
+
+#service-dialog {
+    box-sizing: border-box;
+    width: min(92vw, 600px);
+    max-width: 600px;
+    max-height: 85vh;
+    padding: 0;
+    overflow: auto;
+    border: 1px solid var(--booking-border);
+    border-radius: var(--booking-radius);
+    background-color: var(--booking-surface);
+    color: var(--booking-text);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+#service-dialog::backdrop {
+    background-color: rgba(35, 18, 27, 0.65);
+}
+
+.dialog-content {
+    position: relative;
+    padding: clamp(1.25rem, 4vw, 2rem);
+}
+
+.dialog-content h2 {
+    padding-right: 2.5rem;
+}
+
+#dialog-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 1.6rem;
+}
+
+#dialog-details img {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    margin: 1rem 0;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#dialog-book {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+/* 11. BUSINESS HOURS AND LOCATION */
+
+.hours-location {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.business-hours,
+.find-studio {
+    min-width: 0;
+    padding: 1.25rem;
+    border: 1px solid var(--booking-border);
+    border-radius: var(--booking-radius);
+    background-color: var(--booking-surface);
+    box-shadow: var(--booking-shadow);
+}
+
+.business-hours ul {
+    padding: 0;
+    list-style: none;
+}
+
+.business-hours li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--booking-border);
+}
+
+.business-hours li:last-child {
+    border-bottom: 0;
+}
+
+.find-studio iframe {
+    display: block;
+    width: 100%;
+    min-height: 260px;
+    border: 0;
+    border-radius: 8px;
+}
+
+
+/* 12. CALL TO ACTION */
+
+.call-to-action {
+    margin: 2rem 0;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border-radius: var(--booking-radius);
+    background-color: var(--booking-secondary);
+    text-align: center;
+}
+
+.call-to-action p {
+    max-width: 700px;
+    margin: 0 auto 1.25rem;
+}
+
+
+/* 13. TABLETS */
+
+@media screen and (min-width: 600px) {
+
+    .catalog-controls {
+        grid-template-columns: 1fr 1fr;
+        align-items: end;
+    }
+
+    .booking-catalog-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #booking-form {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 1.25rem;
+    }
+
+    .form-group:last-of-type {
+        grid-column: 1 / -1;
+    }
+
+    #submit-booking,
+    #booking-message {
+        grid-column: 1 / -1;
+    }
+
+    .hours-location {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* 14. DESKTOP */
+
+@media screen and (min-width: 900px) {
+
+    .booking-catalog-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .appointment-section {
+        max-width: 950px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #booking-form {
+        column-gap: 2rem;
+        row-gap: 1.35rem;
+    }
+}
+
+
+/* 15. REDUCED MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
